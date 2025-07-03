@@ -17,11 +17,11 @@ def where_func(list_of_dicts, arg):
                 output_list.append(item)
 
         elif operator == ">":
-            if item.get(column) > value:
+            if float(item.get(column)) > float(value):
                 output_list.append(item)
 
         elif operator == "<":
-            if item.get(column) < value:
+            if float(item.get(column)) > float(value):
                 output_list.append(item)
 
     return output_list
