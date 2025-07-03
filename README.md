@@ -33,17 +33,17 @@ python main.py --file products.csv --where "price=199" --aggregate "rating=max"
 ```
 ## Тестирование:
 ```
-=================================================== test session starts =====================================================
+=================================================== test session starts ====================================================
 platform win32 -- Python 3.11.8, pytest-8.4.1, pluggy-1.6.0
 rootdir: C:\Users\Павел\Desktop\Test_tusk
 configfile: pytest.ini
 collected 8 items
 
-tests\test_agregate_modul.py .                                                                                          [ 12%] 
-tests\test_arg_converter_modul.py .....                                                                                 [ 75%]
-tests\test_file_open_modul.py .                                                                                         [ 87%] 
-tests\test_where_modul.py .                                                                                             [100%] 
+tests\test_agregate_modul.py .                                                                                         [ 12%] 
+tests\test_arg_converter_modul.py .....                                                                                [ 75%]
+tests\test_file_open_modul.py .                                                                                        [ 87%] 
+tests\test_where_modul.py .                                                                                            [100%] 
 
-====================================================== 8 passed in 0.09s =====================================================
+====================================================== 8 passed in 0.09s ====================================================
 
 ```
