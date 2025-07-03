@@ -1,6 +1,6 @@
 import pytest
 
-from app.moduls.arg_converter_modul import arg_converter
+from moduls.arg_converter_modul import arg_converter
 
 
 @pytest.mark.parametrize(

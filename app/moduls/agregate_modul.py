@@ -1,4 +1,4 @@
-from app.moduls.arg_converter_modul import arg_converter
+from moduls.arg_converter_modul import arg_converter
 
 
 def aggregate_func(list_of_dicts, arg):

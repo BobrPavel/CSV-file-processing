@@ -1,4 +1,4 @@
-from app.moduls.agregate_modul import aggregate_func
+from moduls.agregate_modul import aggregate_func
 
 
 def test_where_func(test_data):

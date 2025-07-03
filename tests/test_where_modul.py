@@ -1,4 +1,4 @@
-from app.moduls.where_modul import where_func
+from moduls.where_modul import where_func
 
 
 def test_where_func(test_data):

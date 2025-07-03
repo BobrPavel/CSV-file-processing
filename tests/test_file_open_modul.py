@@ -1,4 +1,4 @@
-from app.moduls.file_open_modul import file_open
+from moduls.file_open_modul import file_open
 
 
 def test_file_open():

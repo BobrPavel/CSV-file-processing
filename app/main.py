@@ -1,11 +1,11 @@
 import argparse
 
-
 from moduls.file_open_modul import file_open
-# from moduls.arg_converter_modul import arg_converter
 from moduls.where_modul import where_func
 from moduls.agregate_modul import aggregate_func
 from moduls.output_modul import output_func
+
+
 
 if __name__ == "__main__":
 
@@ -19,6 +19,9 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--aggregate", type=str, help="Enter a parameter for aggregation", required=False
+    )
+    parser.add_argument(
+        "--order_by", type=str, help="Enter a parameter for order_by", required=False
     )
     
     args = parser.parse_args()
