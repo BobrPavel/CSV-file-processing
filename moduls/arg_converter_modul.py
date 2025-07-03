@@ -1,5 +1,5 @@
 def arg_converter(arg):
-    # The function is a converting argument in a convenient list of three elements
+    # Функция для коонвертирования аргументов в удобный вид
     list_of_all_symbols = list(arg)
     output_list = []
 

@@ -2,28 +2,35 @@ from moduls.arg_converter_modul import arg_converter
 
 
 def aggregate_func(list_of_dicts, arg):
-    # Aggregate function (min, max, avg)
-    output_list = []
-    items_list = []
+    # Функция агрегации (min, max, avg)
+    try:
 
-    normal_arg_list = arg_converter(arg)
+        output_list = []
+        items_list = []
 
-    column = normal_arg_list[0]
-    value = normal_arg_list[2]
+        normal_arg_list = arg_converter(arg)
 
-    for item in list_of_dicts:
-        items_list.append(float(item.get(column)))
+        column = normal_arg_list[0]
+        value = normal_arg_list[2]
 
-    if value == "max":
-        output_list = {"max": max(items_list)}
+        for item in list_of_dicts:
+            items_list.append(float(item.get(column)))
 
-    if value == "min":
-        output_list = {"min": min(items_list)}
+        if value == "max":
+            output_list = {"max": max(items_list)}
+        elif value == "min":
+            output_list = {"min": min(items_list)}
+        elif value == "avg":
+            output_list = {"avg": round(sum(items_list) / len(items_list), 2)}
+        else:
+            print("Проверьте корректность ввода команды")
 
-    if value == "avg":
-        output_list = {"avg": round(sum(items_list) / len(items_list), 2)}
+        list_of_dicts = []
+        list_of_dicts.append(output_list)
 
-    list_of_dicts = []
-    list_of_dicts.append(output_list)
+        return list_of_dicts
 
-    return list_of_dicts
+    except Exception:
+        print("Проверьте корректность ввода команды")
+
+    

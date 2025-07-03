@@ -12,20 +12,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     
     parser.add_argument(
-        "--file", type=str, help="Enter the path to the file", required=True
+        "--file", type=str, help="Ввод пути к файлу", required=True
     )
     parser.add_argument(
-        "--where", type=str, help="Enter the filter parameter", required=False
+        "--where", type=str, help="Ввод параметров фильтрации", required=False
     )
     parser.add_argument(
-        "--aggregate", type=str, help="Enter a parameter for aggregation", required=False
+        "--aggregate", type=str, help="Ввод параметров агрегации", required=False
     )
-    parser.add_argument(
-        "--order_by", type=str, help="Enter a parameter for order_by", required=False
-    )
-    
+
     args = parser.parse_args()
-    
     
     if args.file:
         list_of_dicts = file_open(args.file)
